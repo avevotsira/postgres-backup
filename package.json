@@ -1,0 +1,33 @@
+{
+  "name": "postgres-backup",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "backup": "ts-node src/index.ts backup",
+    "restore": "ts-node src/index.ts restore",
+    "list": "ts-node src/index.ts list",
+    "list:sql": "ts-node src/index.ts list --sql",
+    "schedule": "ts-node src/index.ts schedule"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3",
+    "pg": "^8.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/pg": "^8.11.11"
+  }
+}
+
